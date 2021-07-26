@@ -69,6 +69,10 @@ public interface BungeeTaskModule {
 
     @Binds
     @IntoSet
+    TaskSystem.Task bindPteroGatherTask(SystemUsageBuffer.PteroGatherTask pteroGatherTask);
+
+    @Binds
+    @IntoSet
     TaskSystem.Task bindJSONFileStorageCleanTask(JSONFileStorage.CleanTask cleanTask);
 
     @Binds

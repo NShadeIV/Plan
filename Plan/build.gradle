@@ -105,6 +105,9 @@ subprojects {
         implementation "com.google.dagger:dagger:$daggerVersion"
         annotationProcessor "com.google.dagger:dagger-compiler:$daggerCompilerVersion"
         testAnnotationProcessor "com.google.dagger:dagger-compiler:$daggerCompilerVersion"
+        
+        // Http client for making web requessts
+        implementation 'com.squareup.okhttp3:okhttp:4.9.0'
 
         // Test Tooling Dependencies
         testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'      // JUnit 5
