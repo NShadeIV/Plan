@@ -72,6 +72,10 @@ public interface SpongeTaskModule {
 
     @Binds
     @IntoSet
+    TaskSystem.Task bindPteroGatherTask(SystemUsageBuffer.PteroGatherTask pteroGatherTask);
+
+    @Binds
+    @IntoSet
     TaskSystem.Task bindShutdownHookRegistration(ShutdownHook.Registrar registrar);
 
     @Binds

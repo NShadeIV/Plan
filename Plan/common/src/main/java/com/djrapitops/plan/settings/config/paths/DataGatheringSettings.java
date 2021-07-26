@@ -17,6 +17,9 @@
 package com.djrapitops.plan.settings.config.paths;
 
 import com.djrapitops.plan.settings.config.paths.key.BooleanSetting;
+import com.djrapitops.plan.settings.config.paths.key.IntegerSetting;
+import com.djrapitops.plan.settings.config.paths.key.StringSetting;
+import com.djrapitops.plan.settings.config.paths.key.TimeSetting;
 import com.djrapitops.plan.settings.config.paths.key.Setting;
 
 /**
@@ -32,6 +35,13 @@ public class DataGatheringSettings {
     public static final Setting<Boolean> DISK_SPACE = new BooleanSetting("Data_gathering.Disk_space");
     public static final Setting<Boolean> LOG_UNKNOWN_COMMANDS = new BooleanSetting("Data_gathering.Commands.Log_unknown");
     public static final Setting<Boolean> COMBINE_COMMAND_ALIASES = new BooleanSetting("Data_gathering.Commands.Log_aliases_as_main_command");
+    public static final Setting<String> GATHER_FROM = new StringSetting("Data_gathering.Gather_from");
+    
+    public static final Setting<String> PTERO_API_URL = new StringSetting("Data_gathering.Pterodactyl.API_url");
+    public static final Setting<String> PTERO_API_KEY = new StringSetting("Data_gathering.Pterodactyl.API_key");
+    public static final Setting<String> PTERO_SERVER_ID = new StringSetting("Data_gathering.Pterodactyl.Server_id");
+    public static final Setting<Long> PTERO_REQUEST_EVERY = new TimeSetting("Data_gathering.Pterodactyl.Request_every");
+    public static final Setting<Integer> PTERO_FAILS = new IntegerSetting("Data_gathering.Pterodactyl.Fails");
 
     private DataGatheringSettings() {
         /* static variable class */
