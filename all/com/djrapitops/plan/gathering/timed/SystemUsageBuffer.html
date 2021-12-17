@@ -99,8 +99,11 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color"><code><span class="member-name-link"><a href="SystemUsageBuffer.DiskTask.html" title="class in com.djrapitops.plan.gathering.timed">SystemUsageBuffer.DiskTask</a></span></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static class&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><span class="member-name-link"><a href="SystemUsageBuffer.RamAndCpuTask.html" title="class in com.djrapitops.plan.gathering.timed">SystemUsageBuffer.RamAndCpuTask</a></span></code></div>
+<div class="col-second odd-row-color"><code><span class="member-name-link"><a href="SystemUsageBuffer.PteroGatherTask.html" title="class in com.djrapitops.plan.gathering.timed">SystemUsageBuffer.PteroGatherTask</a></span></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><span class="member-name-link"><a href="SystemUsageBuffer.RamAndCpuTask.html" title="class in com.djrapitops.plan.gathering.timed">SystemUsageBuffer.RamAndCpuTask</a></span></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -112,7 +115,8 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><span class="member-name-link"><a href="#%3Cinit%3E()">SystemUsageBuffer</a></span>()</code></div>
+<div class="col-constructor-name even-row-color"><code><span class="member-name-link"><a href="#%3Cinit%3E(com.djrapitops.plan.settings.config.PlanConfig,net.playeranalytics.plugin.server.PluginLogger)">SystemUsageBuffer</a></span>&#8203;(<a href="../../settings/config/PlanConfig.html" title="class in com.djrapitops.plan.settings.config">PlanConfig</a>&nbsp;config,
+ net.playeranalytics.plugin.server.PluginLogger&nbsp;pluginLogger)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
@@ -137,9 +141,6 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code>long</code></div>
 <div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#getRam()">getRam</a></span>()</code></div>
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#warmUp()">warmUp</a></span>()</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -158,10 +159,11 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;()">
+<section class="detail" id="&lt;init&gt;(com.djrapitops.plan.settings.config.PlanConfig,net.playeranalytics.plugin.server.PluginLogger)">
 <h3>SystemUsageBuffer</h3>
 <div class="member-signature"><span class="annotations">@Inject
-</span><span class="modifiers">public</span>&nbsp;<span class="element-name">SystemUsageBuffer</span>()</div>
+</span><span class="modifiers">public</span>&nbsp;<span class="element-name">SystemUsageBuffer</span>&#8203;<span class="parameters">(<a href="../../settings/config/PlanConfig.html" title="class in com.djrapitops.plan.settings.config">PlanConfig</a>&nbsp;config,
+ net.playeranalytics.plugin.server.PluginLogger&nbsp;pluginLogger)</span></div>
 </section>
 </li>
 </ul>
@@ -172,12 +174,6 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method.detail">
 <h2>Method Details</h2>
 <ul class="member-list">
-<li>
-<section class="detail" id="warmUp()">
-<h3>warmUp</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">warmUp</span>()</div>
-</section>
-</li>
 <li>
 <section class="detail" id="getCpu()">
 <h3>getCpu</h3>
